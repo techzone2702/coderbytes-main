@@ -1,0 +1,225 @@
+.dashboard{flex:1;padding:20px;overflow:auto}
+.dashboard-header{margin-bottom:20px}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px}
+.stat-card{background:white;padding:15px;border-radius:10px}
+.table-card,.chart-card{background:white;margin-top:20px;padding:15px;border-radius:10px}
+.ok{color:#00a63e}.warn{color:orange}
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: #e2f9db;
+  font-family: 'Inter', sans-serif;
+}
+
+.stat-card {
+  background: white;
+  padding: 20px;
+  border-radius: 24px;
+  border: 1px solid #f1f5f9;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Icon Box Styles */
+.icon-box {
+  width: 56px;
+  height: 56px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.icon-box svg {
+  width: 28px;
+  height: 28px;
+  color: white;
+}
+
+/* Specific Gradients from Image */
+.stat-green { background: linear-gradient(135deg, #4ade80, #16a34a); }
+.stat-blue { background: linear-gradient(135deg, #60a5fa, #2563eb); }
+.stat-purple { background: linear-gradient(135deg, #a78bfa, #7c3aed); }
+.stat-rose { background: linear-gradient(135deg, #fb7185, #e11d48); }
+
+/* Text Styles */
+.stat-info {
+  flex-grow: 1;
+}
+
+.stat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.label-text {
+  font-size: 10px;
+  font-weight: 800;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.trend-badge {
+  font-size: 10px;
+  font-weight: 700;
+  color: #10b981;
+  background: #ecfdf5;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+.value-text {
+  font-size: 24px;
+  font-weight: 900;
+  color: #1e293b;
+  margin: 0;
+  line-height: 1;
+}
+
+.sub-text {
+  font-size: 11px;
+  color: #94a3b8;
+  margin-top: 4px;
+  font-weight: 500;
+}
+/* Container Layout */
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid #f1f5f9;
+  text-align: center;
+  align-items: center;
+  
+}
+
+/* Individual Boxes */
+.stat-box {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-3px);
+}
+
+.border-sides {
+  border-left: 1px solid #f1f5f9;
+  border-right: 1px solid #f1f5f9;
+}
+
+/* Labels & Typography */
+.stat-label {
+  font-size: 10px;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.stat-number {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #1e293b;
+  letter-spacing: -1px;
+}
+
+.stat-unit {
+  font-size: 10px;
+  color: #64748b;
+  margin-left: 3px;
+  font-weight: bold;
+}
+
+/* Progress Bar (Total) */
+.stat-bar-bg {
+  width: 40px;
+  height: 4px;
+  background: #e2e8f0;
+  border-radius: 10px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.stat-bar-fill.indigo {
+  width: 70%;
+  height: 100%;
+  background: linear-gradient(90deg, #6366f1, #a5b4fc);
+}
+
+/* Circular Progress (Target) */
+.progress-circle {
+  position: relative;
+  width: 45px;
+  height: 45px;
+}
+
+.circular-chart {
+  display: block;
+  margin: 0 auto;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #f1f5f9;
+  stroke-width: 3.8;
+}
+
+.circle-fill {
+  fill: none;
+  stroke: #10b981;
+  stroke-width: 3.8;
+  stroke-linecap: round;
+  transition: stroke-dasharray 1s ease;
+}
+
+.percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 11px;
+  font-weight: 900;
+  color: #065f46;
+}
+
+/* Trend Badge (Change) */
+.trend-badge {
+  background: #eff6ff;
+  color: #2563eb;
+  padding: 4px 8px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  font-weight: 800;
+  font-size: 12px;
+  box-shadow: 0 2px 10px rgba(37, 99, 235, 0.1);
+}
+
+.stat-subtext {
+  font-size: 9px;
+  color: #94a3b8;
+  margin-top: 4px;
+}
+
+.mt-5 { margin-top: 5px; }

@@ -1,2 +1,2 @@
-# coderbytes-main
-Main website for hackstorm'25
+# coderbytes
+a waste management web app

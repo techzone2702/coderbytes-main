@@ -1,0 +1,188 @@
+.marketplace-container {
+  padding: 24px;
+  background-color: #e2f9db;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Gradient Header Section */
+.market-header-gradient {
+  background: linear-gradient(135deg, #376de3 0%, #10b981 100%);
+  padding: 40px;
+  border-radius: 16px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.header-text h1 {
+  font-size: 28px;
+  font-weight: 800;
+  margin: 0 0 8px 0;
+}
+
+.header-text p {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+.market-stats-row {
+  display: flex;
+  gap: 20px;
+}
+
+.m-stat-card {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 15px 25px;
+  border-radius: 12px;
+  min-width: 160px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.m-label { font-size: 12px; font-weight: 600; opacity: 0.8; }
+.m-value { font-size: 20px; font-weight: 800; margin-top: 5px; }
+
+/* Controls Section */
+.market-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  background: white;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #f1f5f9;
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  padding-left: 10px;
+}
+
+.search-wrapper input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+}
+
+.filter-btn {
+  background: white;
+  border: 1px solid #e2e8f0;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #475569;
+  cursor: pointer;
+}
+
+/* Grid and Cards */
+.market-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.market-item-card {
+  background: white;
+  border-radius: 16px;
+  border: 1px solid #f1f5f9;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.market-item-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.item-visual {
+  height: 120px;
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.item-icon-box {
+  width: 70px;
+  height: 70px;
+  background: white;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+.item-content { padding: 20px; }
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.item-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+.verified-pill {
+  background: #dcfce7;
+  color: #166534;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.seller-name {
+  font-size: 13px;
+  color: #64748b;
+  margin: 4px 0 16px 0;
+}
+
+.item-details {
+  border-top: 1px solid #f8fafc;
+  padding-top: 16px;
+  margin-bottom: 20px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+.detail-row span { color: #94a3b8; }
+.detail-row strong { color: #334155; }
+
+.price-text {
+  color: #10b981 !important;
+  font-weight: 800;
+}
+
+.interest-btn {
+  width: 100%;
+  background: #00a63e;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.interest-btn:hover {
+  background: #e2f9db;
+  color: #1e293b;
+}

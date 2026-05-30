@@ -1,0 +1,132 @@
+.app-layout{
+    display:flex;
+    height:100vh;
+    font-family: sans-serif;
+    background:#effaf3;
+
+}
+.sidebar{
+    width:230px;
+    background: linear-gradient(135deg, #00a63e, #009965);
+    color:white;
+    padding:20px;
+
+}
+.logo{
+  margin-bottom:30px;
+  font-size:24px;
+  font-weight:700; 
+  text-align:start;
+}
+
+.sidebar nav a{
+    display:block;
+    padding:10px;
+    border-radius:6px;
+    cursor:pointer;
+    margin-bottom:10px;
+    text-decoration:none;
+    color:white;
+    font-weight:700;
+    transition:background 0.2s;
+
+
+}
+.sidebar nav span{
+   position: relative;
+    bottom:6px;
+    padding-left: 5px;
+   
+
+}
+.sidebar nav a:hover,
+.sidebar nav 
+.active{background:#17ee66 ;color: #2c2c2c; border: 1px solid #ffffff;}
+.app-layout {
+  display: flex;
+}
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+} 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+}
+.user-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.user-info span {
+  font-weight: 600;
+}
+.content-section {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.content-section h2 {
+  margin-top: 0;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table th, .table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+.table th {
+  background-color: #f4f4f4;
+  font-weight: 600;
+}
+.table tr:hover {
+  background-color: #f1f1f1;
+}
+.button {
+  background-color: #005035;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s;
+} 
+.button:hover {
+  background-color: #0fc98b;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.form-group input, .form-group select, .form-group textarea {
+  width: 100%;  
+  padding: 8px;
+  border: 1px solid #ccc;   
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+
